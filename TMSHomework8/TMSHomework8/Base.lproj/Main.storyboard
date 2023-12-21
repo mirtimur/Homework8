@@ -1,24 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TMSHomework8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRQ-b4-pOE">
+                                <rect key="frame" x="0.0" y="59" width="393" height="575"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lr7-J9-eQt">
+                                <rect key="frame" x="0.0" y="634" width="393" height="184"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLd-iT-tNV">
+                                        <rect key="frame" x="253" y="150" width="140" height="34"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="OWR-9v-4ms"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Resset"/>
+                                        <connections>
+                                            <action selector="ressetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k11-co-9jl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI4-BU-d4H">
+                                        <rect key="frame" x="0.0" y="150" width="140" height="34"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="zZl-uF-JVd"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Create squares"/>
+                                        <connections>
+                                            <action selector="createSquaresButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NhL-Re-ToL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap9-g4-gyB">
+                                        <rect key="frame" x="176.66666666666666" y="112" width="40" height="40"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ap9-g4-gyB" secondAttribute="height" id="dXb-eZ-RIr"/>
+                                            <constraint firstAttribute="height" constant="40" id="eub-Mg-Tfu"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.down.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="downButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wup-jG-LU6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fw-e5-E5M">
+                                        <rect key="frame" x="217" y="72" width="40" height="40"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="HbM-2C-iD5"/>
+                                            <constraint firstAttribute="width" secondItem="6Fw-e5-E5M" secondAttribute="height" id="PeY-Yp-2y5"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.right.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="rightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yx5-na-PNg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6x-YK-vDm">
+                                        <rect key="frame" x="176.66666666666666" y="32" width="40" height="40"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="22W-EX-Ky2"/>
+                                            <constraint firstAttribute="width" secondItem="n6x-YK-vDm" secondAttribute="height" id="qNG-pQ-Frp"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.up.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="upButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yud-Oc-zgH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBh-px-PUJ">
+                                        <rect key="frame" x="137" y="72" width="40" height="40"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZBh-px-PUJ" secondAttribute="height" id="KWQ-No-3pL"/>
+                                            <constraint firstAttribute="height" constant="40" id="Ob1-GQ-SeO"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.left.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="leftButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQQ-YL-RkD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="RI4-BU-d4H" firstAttribute="leading" secondItem="lr7-J9-eQt" secondAttribute="leading" id="1JY-7X-17h"/>
+                                    <constraint firstAttribute="bottom" secondItem="RI4-BU-d4H" secondAttribute="bottom" id="3rQ-TT-qmA"/>
+                                    <constraint firstAttribute="bottom" secondItem="NLd-iT-tNV" secondAttribute="bottom" id="8X5-nK-Bfd"/>
+                                    <constraint firstItem="n6x-YK-vDm" firstAttribute="top" secondItem="lr7-J9-eQt" secondAttribute="top" constant="32" id="BNA-3a-JIQ"/>
+                                    <constraint firstItem="NLd-iT-tNV" firstAttribute="width" secondItem="RI4-BU-d4H" secondAttribute="width" id="Bo3-X7-6VF"/>
+                                    <constraint firstItem="ZBh-px-PUJ" firstAttribute="centerY" secondItem="lr7-J9-eQt" secondAttribute="centerY" id="Fmw-v9-NGK"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Fw-e5-E5M" secondAttribute="trailing" constant="136" id="K5s-ar-bRI"/>
+                                    <constraint firstAttribute="trailing" secondItem="NLd-iT-tNV" secondAttribute="trailing" id="Yzm-I2-HSe"/>
+                                    <constraint firstItem="6Fw-e5-E5M" firstAttribute="leading" secondItem="ZBh-px-PUJ" secondAttribute="trailing" constant="40" id="fSM-0i-ui9"/>
+                                    <constraint firstAttribute="bottom" secondItem="ap9-g4-gyB" secondAttribute="bottom" constant="32" id="gPA-uD-dnE"/>
+                                    <constraint firstItem="ap9-g4-gyB" firstAttribute="centerX" secondItem="lr7-J9-eQt" secondAttribute="centerX" id="j7h-UZ-odr"/>
+                                    <constraint firstItem="n6x-YK-vDm" firstAttribute="centerX" secondItem="lr7-J9-eQt" secondAttribute="centerX" id="sNA-B0-28O"/>
+                                    <constraint firstItem="6Fw-e5-E5M" firstAttribute="centerY" secondItem="lr7-J9-eQt" secondAttribute="centerY" id="uXV-EE-pmL"/>
+                                    <constraint firstItem="ap9-g4-gyB" firstAttribute="top" secondItem="n6x-YK-vDm" secondAttribute="bottom" constant="40" id="xw8-Ey-c2K"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wRQ-b4-pOE" secondAttribute="trailing" id="IKH-59-9QW"/>
+                            <constraint firstItem="lr7-J9-eQt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jvh-UR-8zR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lr7-J9-eQt" secondAttribute="bottom" id="RqJ-2L-I2S"/>
+                            <constraint firstItem="wRQ-b4-pOE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YdB-Yq-vgg"/>
+                            <constraint firstItem="wRQ-b4-pOE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cdc-J0-FR3"/>
+                            <constraint firstItem="lr7-J9-eQt" firstAttribute="top" secondItem="wRQ-b4-pOE" secondAttribute="bottom" id="f2r-iW-KOB"/>
+                            <constraint firstAttribute="trailing" secondItem="lr7-J9-eQt" secondAttribute="trailing" id="uEh-DG-TZz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="wRQ-b4-pOE" id="E64-y0-Nt1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrowshape.down.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="arrowshape.left.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="arrowshape.right.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="arrowshape.up.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
